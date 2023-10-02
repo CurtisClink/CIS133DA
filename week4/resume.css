@@ -1,0 +1,36 @@
+body {
+    font-family: serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 36px;
+    color: rgb(33, 87, 51);
+    text-align: center;
+    background-color: rgb(75, 133, 94);
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: rgb(33, 87, 51);
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(33, 87, 51);
+}
+
+hr {
+    border: 3px solid rgb(33, 87, 51); /* Border width, style, and color */
+}
+
+#contact-info {
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+}
