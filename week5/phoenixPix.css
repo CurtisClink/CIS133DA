@@ -1,0 +1,23 @@
+img {
+    width: 450px; 
+    height: 450px; 
+    border: 2px solid #000;
+  
+}
+
+img[src="images/downtownPHXLightrail.jpg"] {
+    filter: grayscale(100%);
+}
+
+img[src="images/phoenix-arizona-usa-downtown-cityscape-dusk-above-149438219.webp"] {
+    filter: contrast(150%);
+}
+
+img[src="images/phoenix-az.jpg"] {
+    filter: sepia(100%);
+}
+
+img[src="images/phoenix-skyline-and-cactus-picture-id520506217-1.jpg"] {
+    opacity: 0.7;
+}
+
