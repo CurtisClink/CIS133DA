@@ -74,3 +74,13 @@ h3 {
     max-width: 2048px;
     box-shadow: 3px 3px 3px #777;
 }
+a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #3370ff;
+    transition:all
+}
+a:hover {
+    color: #ff1d1d; 
+    background-color: #333; 
+  }
