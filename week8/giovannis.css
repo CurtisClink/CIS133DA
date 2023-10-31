@@ -41,3 +41,57 @@ p {
     padding: 5px;
     border-radius: 3px;
 }
+
+body{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 75px auto 50px;
+    grid-template-areas: "hdr hdr" "aside main" "ftr ftr";
+
+}   
+
+header {
+    color: white;
+    background-color: rgb (33,87,51);
+    grid-area: hdr;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    color: white;
+    background-color: rgb(33, 87, 51);
+    
+    
+}
+
+aside{
+    background-color: rgb(75,133,94);
+    grid-area: aside;
+}
+
+main{
+    grid-area: main;
+}
+
+
+footer {
+    grid-area: ftr;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: "contact jobs"; 
+    justify-content: center; /
+    align-items: center; 
+    color: white;
+    background-color: rgb(53, 112, 72);
+}
+
+footer div:nth-child(1) {
+    grid-area: contact; 
+}
+
+footer div:nth-child(2) {
+    grid-area: jobs; 
+}
+
