@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            margin: 0 auto;
+            width: 210px;
+            margin-top: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <form> 
+        <table >
+            <tr>
+                <td colspan="2"></td>
+                <input tpye="text"  
+                    name="UserName" 
+                    id="username" 
+                    placeholder="Type your username" 
+                    style="width: 200px;" 
+                    tabindex="1"
+                    maxlength="32"
+                    autofocus />
+                
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <input type="password" 
+                    name="PassWord" 
+                    id="password" 
+                    placeholder="Type your password" 
+                    tabindex="2"
+                    style="width: 200px;"
+                    required  />
+                
+            </tr>
+            <tr>
+                <td>
+                    <input  name="ResetButton" 
+                        type="reset" 
+                        value="reset" 
+                        style="width: 100px;" 
+                        tabindex="3" />
+                </td>
+                <td>
+                    <input name= "SubmitButton" 
+                        type="submit" 
+                        value="submit" 
+                        style="width: 100px;" 
+                        tabindex="4" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <form>
+        <input name="rbuttons" type="radio" id="rButton_1" /> Option 1 <br/>
+        <input name="rbuttons" type="radio" id="rButton_2" /> Option 2 <br/>
+        <input name="rbuttons" type="radio" id="rButton_3" /> Option 3 <br/>
+        
+    </form>
+</body>
+</html>
