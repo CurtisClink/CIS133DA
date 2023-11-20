@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirt Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        input, select {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin: 5px 0;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .image-container {
+            flex: 0 0 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+   
+    <img src="images/shirt.webp" alt="Shirt Image">
+</div>
+
+<div class="form-container">
+
+    <form action="process_order.php" method="post">
+
+        
+        <table>
+            <tr>
+                <td>Color:</td>
+                <td>
+                    <select id="color" name="color" tabindex="1">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Quantity:</td>
+                <td>
+                    <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" tabindex="2">
+                </td>
+            </tr>
+            <tr>
+                <td>Size:</td>
+                <td>
+                    <select id="size" name="size" tabindex="3">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Include Company Logo:</td>
+                <td>
+                    <input type="checkbox" id="includeLogo" name="includeLogo" tabindex="4">
+                </td>
+            </tr>
+            <tr>
+                <td>Upload File:</td>
+                <td>
+                    <input type="file" id="fileUpload" name="fileUpload" tabindex="5">
+                </td>
+            </tr>
+        </table>
+
+        
+        <hr>
+
+      
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter first name" style="width: 100%;" tabindex="6">
+                </td>
+                <td>Last Name:</td>
+                <td>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter last name" style="width: 100%;" tabindex="7">
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td colspan="3">
+                    <input type="text" id="address" name="address" placeholder="Enter address" style="width: 100%;" tabindex="8">
+                </td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>
+                    <input type="text" id="city" name="city" placeholder="Enter city" style="width: 100%;" tabindex="9">
+                </td>
+                <td>State:</td>
+                <td>
+                    <input type="text" id="state" name="state" placeholder="Enter state" style="width: 100%;" tabindex="10">
+                </td>
+            </tr>
+            <tr>
+                <td>ZIP Code:</td>
+                <td>
+                    <input type="text" id="zipCode" name="zipCode" placeholder="Enter ZIP code" style="width: 100%;" tabindex="11">
+                </td>
+                <td>Phone Number:</td>
+                <td>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" style="width: 100%;" tabindex="12">
+                </td>
+            </tr>
+        </table>
+
+        
+        <input type="submit" class="submit-btn" value="Submit">
+
+    </form>
+
+</div>
+
+</body>
+</html>
