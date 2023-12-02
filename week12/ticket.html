@@ -40,7 +40,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:right;"">
+                <td colspan="2" style="text-align:right;">
                     <input type="button" value="Cancel" onclick="cancelTicket()" />
                     <input type="button" value="Print Ticket" onclick="printTicket()" />
                 </td>
@@ -62,5 +62,24 @@
             <p><span class="boldText" id="amigoName">???</span></p>
         </amigoInfo>
     </ticket>
+
+    
+    <script>
+        
+        const userName = prompt("Please enter your name:");
+        const visitDate = prompt("Please enter the date of your visit (MM/DD/YYYY):");
+
+        
+        document.title = `${userName}'s Ticket to Animal Amigos`;
+
+       
+        document.getElementById("ownerName").textContent = userName;
+        document.getElementById("visitDate").textContent = visitDate;
+
+        
+        function cancelTicket() {
+            window.close();
+        }
+    </script>
 </body>
 </html>
